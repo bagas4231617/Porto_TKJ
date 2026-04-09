@@ -367,33 +367,3 @@ export default function App() {
     </div>
   );
 }
-
-alt={selectedProject.title} 
-                  referrerPolicy="no-referrer"
-                  onLoad={(e) => (e.currentTarget.style.opacity = '1')}
-                  style={{ opacity: 0, transition: 'opacity 0.5s ease' }}
-                />
-              </div>
-              <div className="modal-info">
-                <h3 className="modal-title">{selectedProject.title}</h3>
-                <p className="modal-desc">{selectedProject.desc}</p>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <footer>
-        <div className="container">
-          <p>&copy; {new Date().getFullYear()} Muhammad Bagas Malik Albani. Built with React & Terminal Aesthetics.</p>
-          <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
-            <Terminal size={18} />
-            <Globe size={18} />
-            <Code2 size={18} />
-            <Cpu size={18} />
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
